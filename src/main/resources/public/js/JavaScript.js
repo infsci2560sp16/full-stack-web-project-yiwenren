@@ -1,29 +1,38 @@
-var friendimg = [  "Lily","Lucy","Anna","Brain","Jack","Adam","Rose","Tom","Jerry","Elsa","Lisa" ];
-function showFriend(){
-                
+var friendimg = {detail:[ 
+    {"friendName":"Ivy", "img":"image/f1.jpg"},
+    {"friendName":"Allen","img":"image/f2.jpg"},
+    {"friendName":"Jack", "img":"image/f3.jpg"},
+    {"friendName":"Bob", "img":"image/f4.jpg"},
+    {"friendName":"Edson", "img":"image/f5.jpg"},
+    {"friendName":"Maria", "img":"image/f6.jpg"},
+    {"friendName":"Rose", "img":"image/f7.jpg"}
+]};
 
+window.onload = function() {
+  showFriend();
+};
 
-            var index;        
-            var text = "<ul>";
-            for (index = 0; index <friendimg.length; index++){
-                text += "<li>" + friendimg[index] + "</li>";                
-            }
-               text += "</ul>";
-                document.getElementById("FriendsList").innerHTML = text;  
-             document.getElementById("length").innerHTML  = "<mark>" + friendimg.length + "</mark>"+" friends are avaliable for now!"; 
+function showFriend() {
+    var out = "";
+    var i;
+    for(i = 0; i < friendimg.detail.length; i++) {
+        out += '<div class="showStyle"><img src="' + friendimg.detail[i].img + '"/></br>' + 
+        friendimg.detail[i].friendName + '</br><button value="' +friendimg.detail[i].friendName +'"' + 'onclick="CheckAndDeleteFriend(this.value)">Unfollow</botton></div>';
+    }
+    document.getElementById("showFriendList").innerHTML = out;
 }
 
-function deleteFriend(){
-           var index = friendimg.indexOf(document.getElementById("delete").value);
-    if(index !== -1) { // Make sure the value exists
-        friendimg.splice(index, 1);
-        alert(document.getElementById("delete").value +" has been successfully removed!");
-    }       
-    
-    
+function CheckAndDeleteFriend(value){
+     response = confirm("Are you sure you want to delete "+value+"?");
+     if (response === true){
+         for(i=0;i<=friendimg.detail.length;i++){
+             if(friendimg.detail[i].friendName === value){
+                 friendimg.detail.splice(i, 1);
+                 showFriend();    
+                 alert(value+" is no longer your friend:/");
+             }
+         }
+     }  
 }
-
-
-
 
 

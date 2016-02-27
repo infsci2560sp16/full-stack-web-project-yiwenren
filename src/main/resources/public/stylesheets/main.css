@@ -35,25 +35,17 @@ and open the template in the editor.
     Created on : Feb 12, 2016, 3:41:19 PM
     Author     : yiwenren
 */
+
 body{
     width: 960px;
     max-height: 1300px;
-    min-height: 900px;
+    min-height: 500px;
     position: relative;
     margin: auto;
     background: #f5f5f5;
 }
 
-#container{
-    background: #f5f5f5;
-    width: 960px;
-    max-height: 1300px;
-    min-height: 900px;
-    position: relative;
-    margin: auto;
-    
-}
-
+  /******** header styling *******/
 #header {
     background-color:#696969;
     color: #FFFFFF;
@@ -63,180 +55,31 @@ body{
     text-indent: 3%;
     font-size: larger;
 }
-#menu-left ul{
-    position:absolute;
-    top:147px;
-    left:90px;
-    background-color: #bebebe;
-    height:195px;
-    width:200px;
-    float:left;
-    text-align: left; 
-    list-style-type:none;
-    margin:0;
-    padding:0;
-    overflow: hidden;
-    border: 2px;
+#header h1{
+    margin:0px;
+    width: 300px;
+}
+#search{
     
+    border: none;
+    position: relative;
+    height:20px;  
 }
-#menu-right {
-    background-color:#f5f5f5;
-    height:110px;
-    width:450px;
-    inline-box-align: 110px;
+#searchButton{
+    background-color: #CCC;
+    color:#696969;
     text-align: center;
-    list-style-type:none;
-    margin:0;
-    padding:0;
-    overflow: hidden;
-    display:relative;
-    float: left;
-    position: absolute;
-    left:420px;
- 
+    cursor: pointer;
+    font-size: 12px;   
 }
-
-
-
-#menu-right li {
-        float: left;
-        margin-right: 80px;
-    }
-   /* #menu-right li a{
-        background-color:#696969;
-    } */   
-   #menu-left li{
-       background-color:#bebebe;
-   }
-#menu-left a:link,a:visited
-{
-
-display:block;
-font-family: Arial Black;
-font-weight:bold; 
-font-size: large;
-color:#FFFFFF;
-background-color:#bebebe;
-width:200px;
-height: 30px;
-inline-box-align: 30px;
-text-align:center;
-padding-top: 6px;
-padding-bottom: 6px;
-text-decoration:none;
-text-transform:uppercase;
-}
-
-#menu-left a:hover,a:active
-{
-background-color:#696969;
-width:200px;
-}
-
-#menu-special1{
-    background-color: #bebebe;
-    font-size: 17px; 
-    color:#FFFFFF;
-    width:200px;
-    height: 45px;
-    line-height:45px;
-    padding-left: 0;
-    padding-top: 0px;
-    margin-top: 0; 
-    float: left;
-    text-align: center;
-    position:relative;
-    left: 90px;
-
-}
-#menu-special1 a{
-    text-decoration:none;
-    font-family: monospace;
-    color:#FFFFFF;
-    font-weight:bold; 
-}
-#menu-special1 a:hover,a:active
-{
-background-color:#696969;
-width:200px;
-display: block;
-}
-
-#menu-special2{
-   
-    background-color: #bebebe;
-    font-size: 20px; 
-    color:#FFFFFF;
-    width:200px;
-    height: 45px;
-    line-height:45px;
-    padding-left: 0;
-    padding-top: 0px;
-    margin-top: 0; 
-    float: left;
-    text-align: center;
-    position:absolute;
-    top:344px;
-    left:90px;
-
-}
-#menu-special2 a:link,a:visited{
-    text-decoration:none;
-    font-family: monospace;
-    color:#FFFFFF;
-    font-weight:bold; 
-}
-#menu-special2 a:hover,a:active
-{
-background-color:#696969;
-width:200px;
-display: block;
-}
-
-/*#menu-header{
-    position: absolute;
-    right: 0;
-    top:50px;
-    background-color: #FFFFFF;
-    float:right;
-    list-style-type:none;
-    margin:0;
-    padding:0;
-    overflow: hidden;
-    border: 2px;
-    width: 50px;
-
-}
-#menu-header li{
-    display: inline;
-}
-
-#menu-header a:link,a:visited
-{
-
-    display:block;
-    font-family: Arial Black;
-    font-weight:bold; 
-    font-size: 10px;
-    color:#FFFFFF;
-    background-color:#bebebe;
-    width:50px;
+#searchForm{
+    margin-top: -30px;
+    float: right;
+    position: relative;
     height: 30px;
-    inline-box-align: 10px;
-    text-align:center;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    text-decoration:none;
-    text-transform:uppercase;
 }
-
-#menu-header a:hover,a:active
-{
-    background-color:#696969;
-    width:50px;
-}*/
-
 #headMenu{
+    padding-bottom: 10px;
     
 }
 #headMenu ul{
@@ -246,18 +89,14 @@ display: block;
     overflow:hidden;
     position: absolute;
     top:72px;
-    left: 410px;
+    left: 360px;
     margin:auto;
     
 }
-
 #headMenu li{
-      float:left;
-    
+      float:left;    
 }
-
-#headMenu a{
-    
+#headMenu a{    
     display:block;
     width:100px;
     height: 20px;
@@ -269,14 +108,47 @@ display: block;
     text-decoration:none;
     text-transform:uppercase;
 }
-
 #headMenu a:hover,a:active{
     background-color:#DCDCDC;
 }
 
+  /********* index page *********/
+.profile{
+    width: 160px;
+    float: left;   
+    border-right: 1px dotted lightgray;
+}
+.profile img{
+    padding-left: 35px;
+    padding-top: 10px;
+}
+.right{
+    width: 670px;
+    float: left;
+}
 
+#menu-right {
+    background-color:#f5f5f5;
+    height:110px;
+    width: 870px;
+    inline-box-align: 110px;
+    text-align: center;
+    list-style-type:none;
+    margin:0;
+    padding-left:200px;
+    overflow: hidden;
+    display:relative;
+    float: left;
+}
+#menu-right li {        
+        float: left;
+        margin-right: 80px;
+    }
 
-
+.diffFont{
+    font-family: monospace;
+    font-size: 20px; 
+}
 
 p.solid {
     border-style: solid;
@@ -285,6 +157,27 @@ p.solid {
 
 }
 
+/****** post page *******/
+
+.post_index{
+    width: 760px;
+    margin-right: 20px;
+    margin-left: 10px;
+    border:2px solid #DCDCDC;
+    text-align: left;
+    position: relative;
+    margin-bottom: 10px;
+    box-shadow:0 0 5px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.post_index img{
+    width:400px;
+    
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: center;
+}
 .post {
     width: 500px;
     height: 260px;
@@ -298,62 +191,18 @@ p.solid {
     box-shadow:0 0 5px;
     overflow:hidden;
     text-overflow:ellipsis;/*hidde flow-out*/
-
 }
 .post img{
     width:400px;
     height:260px;
     overflow: hidden;
     vertical-align: middle;
-    text-align: center;
-    
+    text-align: center;   
 }
-
-
-
 .post p2{
     font-family: initial;
-    font-size: 4;
+    font-size: 4px;
 }
-
-.registerMain{
-    width:800px;
-    min-height: 300px;
-    margin:auto;
-    
-    border:solid 1px;
-    -moz-box-shadow:    inset 0 0 5px #000000;
-   -webkit-box-shadow: inset 0 0 5px #000000;
-   box-shadow:         3px 3px 5px 6px #ccc;
-   margin-bottom: 50px;
-   background-image: url(image/Register-bg.jpg);
-}
-.registerMain h1,p{
-    margin-left:30px;
-    padding-top:-30px;
-}
-/*.registerMain img{
-    position: relative;
-    width:100px;
-    text-align: center;
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:10px;
-}*/
-#registerMode{
-    margin:auto;
-    width:700px;
-    border-width: -20px;
-    border-bottom: dotted 1px;
-   
-}
-#registerMode h1{
-    margin-left:0px;
-    margin-top:20px;
-    margin-bottom: 5px;
-}
-
 .postHeader{
     width:500px;
     min-height: 30px;
@@ -364,22 +213,18 @@ p.solid {
     box-shadow: 2px 2px 2px 2px #bebebe;
     font-family: Sans-serif;
     align-content: center;
-    color:#696969;
-    
+    color:#696969;   
 }
-
-
 .postContent{
     width:500px;
     min-height: 240px;
     margin:auto;
     margin-top: 20px; 
     padding: 5px; 
+    align-content: center;
     box-shadow: 2px 2px 2px 2px #bebebe;
     font-family: Sans-serif;
-    align-content: center;
     color:#696969;
-    line-height: 240px;
     
 }
 ::-moz-placeholder{
@@ -388,7 +233,6 @@ p.solid {
     background-color: #f5f5f5;
     opacity:1;
     border: none;
-    
     margin: none;
     
 }
@@ -405,81 +249,15 @@ p.solid {
     box-shadow: 2px 2px 2px 2px #bebebe;
     font-size: 12px;   
 }
-
-#searchForm{
-    position:absolute;
-    top:180px;
-    left:760px;
-    height:40px;
-    width:300px;
-    border: none;
-    float:right;
-}
-
-#search{
-    background-color: #CCC;
-    color: #696969;
-    border: none;
-}
-
-
-#searchButton{
-    background-color: #CCC;
-    color:#696969;
-    border: 1px;
-    text-align: center;
-   
-    cursor: pointer;
-    font-size: 12px;   
-}
-
-#deleteForm{
-    position:absolute;
-    top:200px;
-    left:760px;
-    height:40px;
-    width:300px;
-    border: none;
-    float:right;
-}
-
-#delete{
-    background-color: #CCC;
-    color: #696969;
-    border: none;
-}
-
-
-#deleteButton{
-    background-color: #CCC;
-    color:#696969;
-    border: 1px;
-    text-align: center;
-    cursor: pointer;
-    font-size: 12px;   
-}
-
-
-
 #likeMain{
-    /*-webkit-column-width: auto;
-    -moz-column-width: 202px;
-    -o-column-width:202px;
-    -ms-column-width:202px;*/
     -webkit-column-count:3;
     -moz-column-count: 3;
     -o-column--count: 3;
     -ms-column--count:3;
-    /*-webkit-column-rule: 2px solid #000000;
-    -moz-column-rule: 2px solid #000000;
-    -o-column-rule: 2px solid #000000;
-    -ms-column-rule: 2px solid #000000;*/
 }
 .box{
     padding:10px 0 0 15px;
-    text-overflow:ellipsis;/*hidde flow-out*/
-    
-    
+    text-overflow:ellipsis;/*hidde flow-out*/   
 }
 
 .box_p2{
@@ -489,7 +267,7 @@ p.solid {
     box-shadow:0 0 5px #CCC;
     width:240px;
     font-family: initial;
-    font-size: 4;
+    font-size: 15px;
 }
 
 .pic{
@@ -505,46 +283,53 @@ p.solid {
     width:240px;
     height: auto;
 }
+
+ /*******  Registration Page *******/
  
-#follow{
-    font-family: "Trebuchet MS",Arial, Helvetica, sans-serif;
-    border-collapse:collapse;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-}
-
-#follow td{
-    font-size: lem;
-    border:1px solid #f5f5f5;
-    padding:3px 7px 2px 7px;
-    background-color: #D8D8D8;
-}
-#td-l{
-    height: 60px;
-    width:60px;
-} 
-.td-r{
-    height:60px;
-    width:250px;
-}
-
-#follow .alt td{
-    color:#000000;
-    background-color:#bebebe;
-}
-#follow img{
-    width:60px;
-    height:60px;
-    overflow: hidden;
-    vertical-align: middle;
-    text-align: center;
+.registerMain{
+    width:800px;
+    min-height: 300px;
+    margin:auto;
     
+    border:solid 1px;
+    -moz-box-shadow:    inset 0 0 5px #000000;
+   -webkit-box-shadow: inset 0 0 5px #000000;
+   box-shadow:         3px 3px 5px 6px #ccc;
+   margin-bottom: 50px;
+   background-image: url(image/Register-bg.jpg);
 }
+.registerMain h1,p{
+    margin-left:30px;
+    padding-top:-30px;
+}
+
+#registerMode{
+    margin:auto;
+    width:700px;
+    border-width: -20px;
+    border-bottom: dotted 1px;
+   
+}
+#registerMode h1{
+    margin-left:0px;
+    margin-top:20px;
+    margin-bottom: 5px;
+}
+
+/******** PostText/PostPhoto Page ********/
+.container{
+    width: 700px;
+    float: left;
+}
+.buttonAlign{
+    text-align: center;
+    margin-top: 10px;
+} 
+
+/******  Setting Page ******/
 
 #setting{
     font-family: "Trebuchet MS",Arial, Helvetica, sans-serif;
-   
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
@@ -552,68 +337,59 @@ p.solid {
     color:#696969;
 }
 
-#setting p{
-    
-}
-
-
+/*******     fotter styling     ********/
 
 #footer {
+    margin-top: 50px;
     text-align: center;
     color: #000000; 
     clear:both;
-    text-align:center;
-    position: absolute;
     font-size: 18px;
-    bottom: 8px;
-   
+    border-top: 1px dotted lightgray;  
 } 
 
 
+/*******     following page     ********/
 
-/*ul2{
-    list-style-type:none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+#friendPost{
+    width: 550px;
+    float: left;
+    position: relative;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+.statusContainer{
+    margin-bottom: 10px;
+}
+.statusContainer img{
+    width: 50px;
+    border-radius: 25px;
+    float: left;
+}
+.statusContainer h4{
+    float: left;
+    padding-left: 10px;
+    font-family:Cambria;
 }
 
-a:link,a:visited{
-    display:block;
-    width: 120px;
-    background-color: #bebebe;
+#friendList{
+    width: 200px;
+    float: right;
+    position: relative;
+    border-left: 1px dotted lightgray;
+    padding-left: 2px;
+}
+
+#showFriendList img{
+    width: 50px;
+}
+.showStyle{
+    float: left;
+    position: relative;
+    margin-left: 30px;
+    margin-bottom: 10px;
     text-align: center;
-    padding: 4px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-a:hover,a:active{
-    background-color: #696969;
-}*/
-#FriendsList{
-    width: 50%;
-}
-.showFriend{
-    float: left;
-    margin-left: 100px;
-    font-style:Arial;
-     font-size:20px;
-     width:100px;
-}
-.deleteinfo{
-    float: left;
-    margin-left:20px;
-    margin-top: 100px;
-}
-.deleteinfo input{
-    border:2px solid #456879;
-	border-radius:10px;
-	height: 22px;
-	width: 150px;
+    font-family: Cambria;
 }
 
-.ah{
-    float: left;
-    margin-left: 300px;
-}
 

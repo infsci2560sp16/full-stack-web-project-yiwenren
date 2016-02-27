@@ -14,16 +14,21 @@ and open the template in the editor.
     <body>
        
         <div id="header">
-            <h1>NEVERLAND</h1>
+            
+            <form id="searchForm" >
+            <input id="search" type="text" placeholder="search">
+            <input id="searchButton" type="submit" title="search" value="search">
+        </form>
+            <h1>NEVERLAND</h1> 
         </div>
-        
         <div id="headMenu">
          <ul>  
-            <!--li><a href="Post.html"><span style="font-size: 13px; font-family: monospace">User_Panel@lofter.com</span></a></li!-->
+            <!--li><a href="Post.html"><span style="font-size: 13px; font-family: monospace">User_Panel@neverland.com</span></a></li!-->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Post.html">Post</a></li>
                 <li><a href="like.html">Like</a></li>
-                <li><a href="Following.html">Following</a></li>
+                <li class="extra"><a href="Following.html" style="width: 150px">Following</a></li>
+                <li class="extra"><a href="Setting.html" >SETTING</a></li>
          </ul> 
         </div>
         
@@ -106,6 +111,10 @@ and open the template in the editor.
                 </div>
             </div>
             
+        </div>
+        <div id="footer">
+            
+            <center><p>Copyright &copy; Yiwen Ren. Allrights reserved.</p></center>
         </div>
     </body>
 </html>

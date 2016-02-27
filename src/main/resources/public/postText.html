@@ -12,15 +12,37 @@ and open the template in the editor.
         <link href="./stylesheets/main.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div class="postHeader">User_name</div>
-        <div class="postContent" contentEditable=true>
-            <p contentEditable="true">post content</p>
+        <div id="header">
+            
+            <form id="searchForm" >
+            <input id="search" type="text" placeholder="search">
+            <input id="searchButton" type="submit" title="search" value="search">
+        </form>
+            <h1>NEVERLAND</h1> 
         </div>
+        <div id="headMenu">
+         <ul>  
+            
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Post.html">Post</a></li>
+                <li><a href="like.html">Like</a></li>
+                <li class="extra"><a href="Following.html" style="width: 150px">Following</a></li>
+                <li class="extra"><a href="Setting.html" >SETTING</a></li>
+         </ul> 
+        </div>
+        <div class="profile">
+            <a href="Setting.html"><img src="image/33.png" alt="profile photo" width="90" height="90"></a>
+            <center><h2 style="margin: 0px">Emma</h2></center>
+            <center><h2 style="margin: 0px; font-size: 15px;"><a href="register.html">Log Out</a></h2></center>
+        </div> 
+        <div class="container">
+        <div class="postHeader">User_name</div>
+        <div class="postContent" contentEditable=true></div>
         
-        <p><button class="postButton">cancel</button>
+        <div class="buttonAlign"><button class="postButton">cancel</button>
         <button class="postButton">preview</button>
-        <button class="postButton">post</button></p>
-       
+        <button class="postButton" style="width: 63px">post</button></div>
+       </div>
         
     </body>
 </html>

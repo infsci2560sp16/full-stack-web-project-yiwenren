@@ -14,62 +14,58 @@ and open the template in the editor.
        
     </head>
     <body>
-        <span style="position: absolute; left:0; top: 100px;"><a href="Setting.html"><img src="image/33.png" alt="profile photo" width="90" height="90"></a></span>
+        
         <div id="header">
-            <h1>NEVERLAND</h1>
+            
+            <form id="searchForm" >
+            <input id="search" type="text" placeholder="search">
+            <input id="searchButton" type="submit" title="search" value="search">
+        </form>
+            <h1>NEVERLAND</h1> 
         </div>
         <div id="headMenu">
          <ul>  
-            <!--li><a href="Post.html"><span style="font-size: 13px; font-family: monospace">User_Panel@lofter.com</span></a></li!-->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Post.html">Post</a></li>
                 <li><a href="like.html">Like</a></li>
-                <li><a href="Following.html">Following</a></li>
+                <li class="extra"><a href="Following.html" style="width: 150px">Following</a></li>
+                <li class="extra"><a href="Setting.html" >SETTING</a></li>
          </ul> 
         </div>
         
-        <div id="menu-left">
-        <ul>
-           
-            <!--li><a href="Post.html"><span style="font-size: 13px; font-family: monospace">User_Panel@lofter.com</span></a></li!-->
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Post.html">Post</a></li>
-            <li><a href="like.html">Like</a></li>
-            <li><a href="Following.html">Following</a></li>
-        </ul> 
-        </div>  
-        
-       <!-- <div id="searchForm">
-            <input id="search" type="text" value="search friends"></input>
-            <input id="searchButton" type="submit" title="search" value="search"></input>
-        </div>
-        
-         <div id="deleteForm">
-            <input id="delete" type="text" value="delete friends"></input>
-            <input id="deleteButton" type="submit" title="delete friends" value="delete" onclick="deleteFriend()"></input>
-        </div>-->
-        
-         <div id="menu-special1">
-            <a href="Post.html">User@neverland.com</a>   
+        <div class="profile">
+            <a href="Setting.html"><img src="image/33.png" alt="profile photo" width="90" height="90"></a>
+            <center><h2 style="margin: 0px">Emma</h2></center>
+            <center><h2 style="margin: 0px; font-size: 15px;"><a href="register.html">Log Out</a></h2></center>
         </div> 
-        
-        <div id="menu-special2">
-            <a href="Setting.html">SETTING</a>   
-        </div> 
-        
-       <div class="ah">
-        <div class="showFriend">
-        <div id="FriendsList"></div>
-        
+        <div id="friendPost">
+            <div class="statusContainer">
+                    <img src="image/f1.jpg" alt="profile"/>
+                    <h4>Ivy</h4>
+                    <div class="postContent">
+                        <p>Here contains current posts of friends that Emma follows.</p>
+                </div>
+            </div>
+            <div class="statusContainer">
+                    <img src="image/f2.jpg" alt="profile"/>
+                    <h4>Allen</h4>
+                    <div class="postContent">
+                        <p>Here contains current posts of friends that Emma follows.</p>
+                </div>
+            </div>
         </div>
-        <div class="deleteinfo">
-        <div id="length"></div>
-        <input type="text" id="delete"/>
-        <button id="deleteBtn" onclick="deleteFriend()">Delete</button>
-        <br/>
-        <br/>
-        <button id="ShowFriend" onclick="showFriend()" >Show New Friends List</button> (Click here to refresh your friends list)
+        <div id="friendList">
+        <h2>Following friends:</h2>
+        
+        <div id="showFriendList">
+            
+        </div>        
+            </div>
+        <div id="footer">
+            
+            <center><p>Copyright &copy; Yiwen Ren. Allrights reserved.</p></center>
         </div>
-   </div>
+       
     </body>
+    
 </html>
