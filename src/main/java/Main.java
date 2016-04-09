@@ -34,12 +34,19 @@ public class Main {
     //   return "E=mc^2: " + energy + " = " + m.toString();
     // });
 
-       /* get("/", (request, response) -> {
-                Map<String, Object> attributes = new HashMap<>();
-                attributes.put("message", "Hello World!");
+    get("/", (request, response) -> {
+          Map<String, Object> attributes = new HashMap<>();
+          attributes.put("title", "Hello World!");
 
-                return new ModelAndView(attributes, "index.ftl");
-            }, new FreeMarkerEngine());*/
+        return new ModelAndView(attributes, "index.ftl");
+    }, new FreeMarkerEngine());
+    
+    get("/index", (request, response) -> {
+          Map<String, Object> attributes = new HashMap<>();
+          attributes.put("title", "Hello World!");
+
+        return new ModelAndView(attributes, "index.ftl");
+    }, new FreeMarkerEngine());
 
     get("/db", (req, res) -> {
       Connection connection = null;

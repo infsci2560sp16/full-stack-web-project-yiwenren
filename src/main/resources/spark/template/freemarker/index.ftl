@@ -1,56 +1,79 @@
 <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html>
-<head>
-  <#include "header.ftl">
-</head>
+    <head>
+        <title>home</title>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./stylesheets/main.css" rel="stylesheet" type="text/css"/>
 
-<body>
-
-  <#include "nav.ftl">
-
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="/lang-logo.png">
-    </a>
-    <h1>Getting Started with Java on Heroku</h1>
-    <p>This is a sample Java application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-java"><span class="glyphicon glyphicon-flash"></span> Getting Started with Java</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/java-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
-  </div>
-</div>
-<div class="container">
-  <div class="alert alert-info text-center" role="alert">
-    To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-java" class="alert-link">Getting Started with Java on Heroku</a> tutorial.
-  </div>
-  <hr>
-  <div class="row">
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample app works</h3>
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/java-getting-started">Heroku Button</a> on the repository.</li>
-
-        <li>When Heroku received the source code, it grabbed all the dependencies in the <a href="https://github.com/heroku/java-getting-started/blob/master/pom.xml">pom.xml</a>.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-        <li>Check out the <a href="https://devcenter.heroku.com/articles/getting-started-with-java">Getting Started</a> guide to learn more!</li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
-      <ul>
-        <li><a href="https://www.heroku.com/home">Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/">Heroku Dev Center</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-java">Getting Started with Java on Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/deploying-java">Deploying Java Apps on Heroku</a></li>
-      </ul>
-    </div>
-  </div> <!-- row -->
-   <div class="alert alert-info text-center" role="alert">
-    Please do work through the Getting Started guide, even if you do know how to build such an application.  The guide covers the basics of working with Heroku, and will familiarize you with all the concepts you need in order to build and deploy your own apps.
-  </div>
-</div>
-
-
-</body>
+    </head>
+    <body>
+    
+        <div id="header">
+            
+            <form id="searchForm" >
+            <input id="search" type="text" placeholder="search">
+            <input id="searchButton" type="submit" title="search" value="search">
+        </form>
+            <h1>NEVERLAND</h1> 
+        </div>
+        <div id="headMenu">
+         <ul>  
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Post.html">Post</a></li>
+                <li><a href="like.html">Like</a></li>
+                <li class="extra"><a href="Following.html" style="width: 150px">Following</a></li>
+                <li class="extra"><a href="Setting.html" >SETTING</a></li>
+         </ul> 
+        </div>
+        
+        <div class="profile">
+            <a href="Setting.html"><img src="image/33.png" alt="profile photo" width="90" height="90"></a>
+            <h2 style="margin: 0px">Emma</h2>
+            <h2 style="margin: 0px; font-size: 15px;"><a href="register.html">Log Out</a></h2>
+        </div>  
+        
+         <div class="right">
+        <ul id="menu-right">
+            <li><a href="postText.html"><img src="image/22.png" alt="postText" width="110" height="110"></a></li>
+            <li><a href="postPhoto.html"><img src="image/11.png" alt="postPhoto" width="110" height="115"></a></li>
+        </ul> 
+        <div class="post_index" style="font-family: initial;font-size: 4">
+            
+            <h1>${title}</h1>
+            <p>
+                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi
+            </p>
+        </div>
+        
+        
+        <div class="post_index">
+            <img src="image/c-1.jpg" alt="postPhoto">
+        </div>
+             <div class="post_index" style="font-family: initial;font-size: 4">
+            
+           <h1>ked quia non</h1>
+            <p>
+                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi
+            </p>
+        </div>
+        
+        
+        <div class="post_index">
+            <img src="image/c-1.jpg" alt="postPhoto">
+        </div>
+        </div>
+        <div id="footer">
+            
+            <p>Copyright &copy; Yiwen Ren. Allrights reserved.</p>
+        </div>
+         
+   
+       
+    </body>
 </html>
