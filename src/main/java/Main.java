@@ -10,6 +10,8 @@ import java.util.Map;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import com.google.gson.Gson;
+import org.json.JSONObject;
 
 import static spark.Spark.*;
 import spark.template.freemarker.FreeMarkerEngine;
@@ -24,6 +26,8 @@ public class Main {
 
     port(Integer.valueOf(System.getenv("PORT")));
     staticFileLocation("/public");
+    Object register = new register();
+ 
 
     // get("/hello", (req, res) -> {
     //   RelativisticModel.select();
@@ -36,8 +40,8 @@ public class Main {
 
     get("/", (request, response) -> {
           Map<String, Object> attributes = new HashMap<>();
-          attributes.put("title", "Hello World!");
-
+          attributes.put("title1", "title1");
+          attributes.put("title2", "title2");
         return new ModelAndView(attributes, "index.ftl");
     }, new FreeMarkerEngine());
     
@@ -47,8 +51,12 @@ public class Main {
 
         return new ModelAndView(attributes, "index.ftl");
     }, new FreeMarkerEngine());
+    
+    
+    
+    
 
-    get("/db", (req, res) -> {
+    /*get("/db", (req, res) -> {
       Connection connection = null;
       Map<String, Object> attributes = new HashMap<>();
       try {
@@ -72,7 +80,7 @@ public class Main {
       } finally {
         if (connection != null) try{connection.close();} catch(SQLException e){}
       }
-    }, new FreeMarkerEngine());
+    }, new FreeMarkerEngine());*/
 
   }
 
