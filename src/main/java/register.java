@@ -34,7 +34,7 @@ public class register {
         
         get("/index",(request, response) -> {
             Map<String, Object> data = new HashMap<>();
-            data.put("title2", "title2");
+            data.put("title2", "title90");
             return new ModelAndView(data, "index.ftl"); 
         },gson::toJson);
         
