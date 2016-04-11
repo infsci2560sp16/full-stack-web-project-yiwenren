@@ -40,8 +40,13 @@ public class Main {
 
     get("/", (request, response) -> {
           Map<String, Object> attributes = new HashMap<>();
+<<<<<<< HEAD
           //attributes.put("title1", "title1");
           attributes.put("title2", "title3");
+=======
+          attributes.put("title", "title1");
+          attributes.put("title", "title2");
+>>>>>>> 99a206942ab62f4cb9ca8bf469c0f4d3226ed24f
         return new ModelAndView(attributes, "index.ftl");
     }, new FreeMarkerEngine());
     
