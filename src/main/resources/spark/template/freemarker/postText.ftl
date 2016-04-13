@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>posttsxt</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./stylesheets/main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="header">
+            
+            <form id="searchForm" >
+            <input id="search" type="text" placeholder="search">
+            <input id="searchButton" type="submit" title="search" value="search">
+        </form>
+            <h1>NEVERLAND</h1> 
+        </div>
+        <div id="headMenu">
+         <ul>  
+            
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Post.html">Post</a></li>
+                <li><a href="like.html">Like</a></li>
+                <li class="extra"><a href="Following.html" style="width: 150px">Following</a></li>
+                <li class="extra"><a href="Setting.html" >SETTING</a></li>
+         </ul> 
+        </div>
+        <div class="profile">
+            <a href="Setting.html"><img src="image/33.png" alt="profile photo" width="90" height="90"></a>
+            <h2 style="margin: 0px">Emma</h2>
+            <h2 style="margin: 0px; font-size: 15px;"><a href="register.html">Log Out</a></h2>
+        </div> 
+        <div class="container">
+        <div class="postHeader">User_name</div>
+        <div class="postContent" contentEditable=true>
+            
+        </div>
+        
+        <div class="buttonAlign"><button class="postButton">cancel</button>
+        <button class="postButton">preview</button>
+        <button class="postButton" style="width: 63px">post</button></div>
+       </div>
+        
+    </body>
+</html>

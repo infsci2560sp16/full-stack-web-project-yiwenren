@@ -24,24 +24,24 @@ and open the template in the editor.
         </div>
         <div id="headMenu">
          <ul>  
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Post.html">Post</a></li>
-                <li><a href="like.html">Like</a></li>
-                <li class="extra"><a href="Following.html" style="width: 150px">Following</a></li>
-                <li class="extra"><a href="Setting.html" >SETTING</a></li>
+                <li><a href="index.ftl">Home</a></li>
+                <li><a href="Post.ftl">Post</a></li>
+                <li><a href="like.ftl">Like</a></li>
+                <li class="extra"><a href="Following.ftl" style="width: 150px">Following</a></li>
+                <li class="extra"><a href="Setting.ftl" >SETTING</a></li>
          </ul> 
         </div>
         
         <div class="profile">
             <a href="Setting.html"><img src="image/33.png" alt="profile photo" width="90" height="90"></a>
             <h2 style="margin: 0px">Emma</h2>
-            <h2 style="margin: 0px; font-size: 15px;"><a href="register.html">Log Out</a></h2>
+            <h2 style="margin: 0px; font-size: 15px;"><a href="register.ftl">Log Out</a></h2>
         </div>  
         
          <div class="right">
         <ul id="menu-right">
-            <li><a href="postText.html"><img src="image/22.png" alt="postText" width="110" height="110"></a></li>
-            <li><a href="postPhoto.html"><img src="image/11.png" alt="postPhoto" width="110" height="115"></a></li>
+            <li><a href="postText.ftl"><img src="image/22.png" alt="postText" width="110" height="110"></a></li>
+            <li><a href="postPhoto.ftl"><img src="image/11.png" alt="postPhoto" width="110" height="115"></a></li>
         </ul> 
         <div class="post_index" style="font-family: initial;font-size: 4">
             
