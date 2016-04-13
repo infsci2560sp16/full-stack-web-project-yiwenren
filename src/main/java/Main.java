@@ -58,15 +58,13 @@ public class Main {
         String words = "sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia";
         Map<String, Object> attributes = new HashMap<>();
         attributes.put("title","helloTitle");
-        attributes.put("words",words);
+        attributes.put("words",words); 
+               
         
         for(int i = 4; i<=11; i++){
-            String imgStr1 = "img"+(i+1);
-            String contStr1 = "cont"+i;
-            String imgStr2 = "image/c-"+(i+1)+".jpg";
-            String contStr2 = "content"+i;
-            attributes.put(imgStr1,imgStr2);
-            attributes.put(contStr1,contStr2);
+            String img1 = "img"+(i+1);
+            String img2 = " <img src= \"image/c-"+(i+1)+".jpg\" alt=\"content"+i+"\">";
+            attributes.put(img1,img2);
         }
        return new ModelAndView(attributes, "like.ftl");
     }, new FreeMarkerEngine());
