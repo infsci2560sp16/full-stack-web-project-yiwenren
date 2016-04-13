@@ -24,8 +24,8 @@ and open the template in the editor.
         </div>
         <div id="headMenu">
          <ul>  
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Post.html">Post</a></li>
+                <li><a href="index.ftl">Home</a></li>
+                <li><a href="Post.ftl">Post</a></li>
                 <li><a href="like.html">Like</a></li>
                 <li class="extra"><a href="Following.ftl" style="width: 150px">Following</a></li>
                 <li class="extra"><a href="Setting.ftl" >SETTING</a></li>
