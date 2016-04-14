@@ -25,7 +25,7 @@ public class Main {
   public static void main(String[] args) {
 
     port(Integer.valueOf(System.getenv("PORT")));
-    staticFileLocation("/spark/template/freemarker");
+    staticFileLocation("/public");
     Object register = new register();
  
 
@@ -54,7 +54,7 @@ public class Main {
         return new ModelAndView(attributes, "index.ftl");
     }, new FreeMarkerEngine());
     
-    get("/like", (request, response) -> {
+    /*get("/like", (request, response) -> {
         String words = "sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia";
         Map<String, Object> attributes = new HashMap<>();
         attributes.put("title","helloTitle");
@@ -67,7 +67,7 @@ public class Main {
             attributes.put(img1,img2);
         }
        return new ModelAndView(attributes, "like.ftl");
-    }, new FreeMarkerEngine());
+    }, new FreeMarkerEngine());*/
         
     
     
@@ -75,7 +75,7 @@ public class Main {
     
     
 
-    /*get("/db", (req, res) -> {
+    get("/db", (req, res) -> {
       Connection connection = null;
       Map<String, Object> attributes = new HashMap<>();
       try {
@@ -99,7 +99,7 @@ public class Main {
       } finally {
         if (connection != null) try{connection.close();} catch(SQLException e){}
       }
-    }, new FreeMarkerEngine());*/
+    }, new FreeMarkerEngine());
 
   }
 

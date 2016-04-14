@@ -9,7 +9,7 @@ and open the template in the editor.
         <title>home</title>
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="./stylesheets/main.css" rel="stylesheet" type="text/css"/>
+        <link href="./stylesheets/main.css" rel="stylesheet" type="text/css">
 
     </head>
     <body>
@@ -25,29 +25,29 @@ and open the template in the editor.
         <div id="headMenu">
          <ul>  
                 <li><a href="index.ftl">Home</a></li>
-                <li><a href="Post.ftl">Post</a></li>
+                <li><a href="Post.html">Post</a></li>
                 <li><a href="like.html">Like</a></li>
-                <li class="extra"><a href="Following.ftl" style="width: 150px">Following</a></li>
-                <li class="extra"><a href="Setting.ftl" >SETTING</a></li>
+                <li class="extra"><a href="Following.html" style="width: 150px">Following</a></li>
+                <li class="extra"><a href="Setting.html" >SETTING</a></li>
          </ul> 
         </div>
         
         <div class="profile">
             <a href="Setting.html"><img src="image/33.png" alt="profile photo" width="90" height="90"></a>
             <h2 style="margin: 0px">Emma</h2>
-            <h2 style="margin: 0px; font-size: 15px;"><a href="register.ftl">Log Out</a></h2>
+            <h2 style="margin: 0px; font-size: 15px;"><a href="register.html">Log Out</a></h2>
         </div>  
         
          <div class="right">
         <ul id="menu-right">
-            <li><a href="postText.ftl"><img src="image/22.png" alt="postText" width="110" height="110"></a></li>
-            <li><a href="postPhoto.ftl"><img src="image/11.png" alt="postPhoto" width="110" height="115"></a></li>
+            <li><a href="postText.html"><img src="image/22.png" alt="postText" width="110" height="110"></a></li>
+            <li><a href="postPhoto.html"><img src="image/11.png" alt="postPhoto" width="110" height="115"></a></li>
         </ul> 
         <div class="post_index" style="font-family: initial;font-size: 4">
             
             <h1>${title1}</h1>
             <p>
-                s88ed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi
+                88ed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi
             </p>
         </div>
         
