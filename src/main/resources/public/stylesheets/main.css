@@ -311,7 +311,7 @@ p.solid {
    -webkit-box-shadow: inset 0 0 5px #000000;
    box-shadow:         3px 3px 5px 6px #ccc;
    margin-bottom: 50px;
-   background-image: url(../image/Register-bg.jpg);
+   background-image: url(Register-bg.jpg);
 }
 .registerMain h1,p{
     margin-left:30px;
