@@ -100,6 +100,37 @@ public class Main {
         if (connection != null) try{connection.close();} catch(SQLException e){}
       }
     }, new FreeMarkerEngine());
+    
+    
+    //response to post json
+    post("/postMessage",(req, res) ->{
+        Connection connection = null;
+        System.out.println(req.body());
+        try{
+            connection = DatabaseUrl.extract().getConnection();
+            JSONObject obj = new JSONObject(req.body());
+            String username = obj.getString("username");
+            String email = obj.getString("email");
+            String password = obj.getString("password");
+            
+            String sql = "INSERT INTO student(username, email, password) VALUES ('" + username + "','" + email +"','" + password + "')";
+            
+            connection = DatabaseUrl.extract().getConnection();
+            Statement stmt = connection.createStatement();
+            stmt.executeUpdate(sql);
+
+           //**Testing**
+         System.out.println(username);
+         System.out.println(email);
+         System.out.println(password);
+
+         return req.body();
+        } catch (Exception e){
+            return e.getMessage();
+        } finally{
+            
+        }
+    });
 
   }
 

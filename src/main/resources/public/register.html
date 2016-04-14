@@ -5,6 +5,35 @@
         <link href="./stylesheets/main.css" rel="stylesheet" type="text/css"/>
         
         <title>Registration</title>
+        <script>
+        $(function(){
+           $("#header").load("header.html"); 
+        });
+        
+        $(function(){
+            var username = $("#username").val();
+            var email = $("#email").val();
+            var password = $("#password").val();
+            var secondPassword = $("#password").val();
+            var send = JSON.stringify({"username":username,"email":email,"password":password,"secondPassword":password});
+                    $.ajax({
+                        contentType:'application/json',
+                        url:'/postMessage',
+                        type: "POST",
+                        datatype: "json",
+                        data: send,
+                        success: function(data) {
+                            alert("Welcome!");
+                            window.location.href='index.ftl';
+                      
+                     }});
+                            return false;
+                     
+                
+        });
+            
+            
+        </script>
     </head>
     <body>
         <h1>NEVERLAND</h1>
