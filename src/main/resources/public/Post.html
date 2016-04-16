@@ -49,22 +49,6 @@ and open the template in the editor.
         <br>
         <br>
         
-        <script src="https://code.jquery.com/jquery-1.3.1.min.js"></script>
-        <script>
-            $(document).ready(function () {
-            $.ajax({
-                type: "GET",
-                url: "post.xml",
-                dataType: "xml",
-                success: xmlParser
-            });
-        });
-        function xmlParser(xml) {
-            $(xml).find("post").each(function () {
-                $("#headMenu ul").append('<li><a href="'+$(this).find("menu").text()+'">'+$(this).find("content").text()+'</a></li>');
-            });
-         }
-        </script>
         
         <div id="likeMain">
             <div class="box">
