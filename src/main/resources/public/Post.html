@@ -45,8 +45,8 @@ and open the template in the editor.
             });
         });
         function xmlParser(xml) {
-            $(xml).find("post").each(function () {
-                $(".box_p2 h1").append('<h1>'+$(this).find("title").text()+'</h1>');
+            $(xml).find("post").eacah(function () {
+                $(".box_p2").append('<h1>'+$(this).find("title").text()+'</h1>');
             });
          }
         </script>
