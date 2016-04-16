@@ -47,7 +47,7 @@ and open the template in the editor.
         });
         function xmlParser(xml) {
             $(xml).find("post").each(function () {
-                $(".box_p2").append('<h1>'+$(this).find("images").text()+'</h1>');
+                $(".box_p2").append('<h1>'+$(this).find("title").text()+'</h1>');
             });
          }
         </script>
