@@ -35,6 +35,7 @@ and open the template in the editor.
         <br>
         <br>
         
+        <script src="https://code.jquery.com/jquery-1.3.1.min.js"></script>
         <script>
             $(document).ready(function () {
             $.ajax({
@@ -45,8 +46,8 @@ and open the template in the editor.
             });
         });
         function xmlParser(xml) {
-            $(xml).find("post").eacah(function () {
-                $(".box_p2").append('<h1>'+$(this).find("title").text()+'</h1>');
+            $(xml).find("post").each(function () {
+                $(".pic").append('<img src="'+$(this).find("images").text()+'" alt=""/>');
             });
          }
         </script>
@@ -54,7 +55,8 @@ and open the template in the editor.
         <div id="likeMain">
             <div class="box">
                 <div class="pic">
-                    <img src="image/c-1.jpg" alt="content1"> 
+                   
+                     
                 </div>
             </div>
             <div class="box">
@@ -87,7 +89,7 @@ and open the template in the editor.
             </div>
             <div class="box">
                 <div class="pic">
-                    <img src="image/c-6.jpg" alt="content5"> 
+                   <img src="image/c-6.jpg" alt="content5"> 
                 </div>
             </div>
             <div class="box">
