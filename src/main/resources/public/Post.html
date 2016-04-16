@@ -35,6 +35,22 @@ and open the template in the editor.
         <br>
         <br>
         
+        <script>
+            $(document).ready(function () {
+            $.ajax({
+                type: "GET",
+                url: "post.xml",
+                dataType: "xml",
+                success: xmlParser
+            });
+        });
+        function xmlParser(xml) {
+            $(xml).find("post").each(function () {
+                $(".box_p2 h1").append('<h1>'+$(this).find("title").text()+'</h1>');
+            });
+         }
+        </script>
+        
         <div id="likeMain">
             <div class="box">
                 <div class="pic">
@@ -43,7 +59,7 @@ and open the template in the editor.
             </div>
             <div class="box">
                 <div class="box_p2">
-                    <h1>title</h1>
+                    
                     sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
                  </div>
             </div>
@@ -91,7 +107,7 @@ and open the template in the editor.
             </div>
             <div class="box">
                 <div class="box_p2">
-                    <h1>title</h1>
+                    
                     sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
                  </div>
             </div>
