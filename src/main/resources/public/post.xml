@@ -2,13 +2,21 @@
 <Product xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="post.xsd">
     <post>
-        <title>helloworld</title>
+        <menu>index.html</menu>
+        <content>Home</content>
     </post>
-</Product>
-        
+     <post>
+        <menu>Post.html</menu>
+        <content>Post</content>
+    </post>
+     <post>
+        <menu>like.html</menu>
+        <content>Like</content>
+    </post>
+     <post>
+        <menu>Following.html</menu>
+        <content>Following</content>
+    </post>
     
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+</Product>
+

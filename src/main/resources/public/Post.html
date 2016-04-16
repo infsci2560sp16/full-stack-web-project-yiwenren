@@ -21,14 +21,28 @@ and open the template in the editor.
         </form>
             <h1>NEVERLAND</h1> 
         </div>
+        
+        <script src="https://code.jquery.com/jquery-1.3.1.min.js"></script>
+        <script>
+            $(document).ready(function () {
+            $.ajax({
+                type: "GET",
+                url: "post.xml",
+                dataType: "xml",
+                success: xmlParser
+            });
+        });
+        function xmlParser(xml) {
+            $(xml).find("post").each(function () {
+                $("#headMenu ul").append('<li><a href="'+$(this).find("menu").text()+'">'+$(this).find("content").text()+'</a></li>');
+            });
+         }
+        </script>
+        
         <div id="headMenu">
          <ul>  
             
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Post.html">Post</a></li>
-                <li><a href="like.html">Like</a></li>
-                <li class="extra"><a href="Following.html" style="width: 150px">Following</a></li>
-                <li class="extra"><a href="Setting.html" >SETTING</a></li>
+               
          </ul> 
         </div>
         
