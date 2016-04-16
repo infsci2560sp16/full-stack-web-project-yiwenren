@@ -36,12 +36,12 @@ and open the template in the editor.
             <a href="Setting.html"><img src="image/33.png" alt="profile photo" width="90" height="90"></a>
             <h2 style="margin: 0px">Emma</h2>
             <h2 style="margin: 0px; font-size: 15px;"><a href="register.html">Log Out</a></h2>
-            <#if dayOfWeek == "Monday">
-               <p> Monday </p>
-            <#elseif dayOfWeek == "Tuesday">
-               <p> Tuesday</p>
+            <#if dayOfWeek=="Monday">
+               <p>Monday</p>
+            <#elseif dayOfWeek=="Tuesday">
+               <p>Tuesday</p>
             <#else>
-                <p> else </p>
+                <p>else</p>
             </#if>
         </div>  
         
