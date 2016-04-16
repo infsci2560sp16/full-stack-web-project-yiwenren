@@ -44,6 +44,7 @@ public class Main {
           attributes.put("title2", "title3");
           attributes.put("title1", "title1");
           attributes.put("title", "title2");
+          attributes.put("dayOfWeek", "Monday");
         return new ModelAndView(attributes, "index.ftl");
     }, new FreeMarkerEngine());
     
@@ -53,6 +54,7 @@ public class Main {
           attributes.put("title2", "title3");
           attributes.put("title1", "title1");
           attributes.put("title", "title2");
+          attributes.put("dayOfWeek", "Monday");
         return new ModelAndView(attributes, "index.ftl");
     }, new FreeMarkerEngine());
     
@@ -71,11 +73,7 @@ public class Main {
        return new ModelAndView(attributes, "like.ftl");
     }, new FreeMarkerEngine());*/
         
-    get("/dayOfWeek", (request, respinse) -> {
-        Map<String, Object> attributes = new HashMap();
-        attributes.put("dayOfWeek","Monday");
-        return new ModelAndView(attributes, "index.ftl");
-      }, new FreeMarkerEngine());
+   
     
     
     
