@@ -2,7 +2,7 @@
 <Product xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="post.xsd">
     <post>
-        <images>image/c-1.jpg</images>
+        <h1>helloworld</h1>
     </post>
 </Product>
         
