@@ -37,9 +37,9 @@ and open the template in the editor.
             <h2 style="margin: 0px">Emma</h2>
             <h2 style="margin: 0px; font-size: 15px;"><a href="register.html">Log Out</a></h2>
             <h3>${dayOfWeek}</h3>
-            <#if dayOfWeek=="Monday">
+            <#if dayOfWeek == "Monday">
                <p>Monday</p>
-            <#elseif dayOfWeek=="Tuesday">
+            <#elseif dayOfWeek == "Tuesday">
                <p>Tuesday</p>
             <#else>
                 <p>else</p>
