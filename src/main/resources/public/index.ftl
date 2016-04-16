@@ -37,11 +37,11 @@ and open the template in the editor.
             <h2 style="margin: 0px">Emma</h2>
             <h2 style="margin: 0px; font-size: 15px;"><a href="register.html">Log Out</a></h2>
             <#if dayOfWeek == "Monday">
-               <h2> Monday </h2>
+               <p> Monday </p>
             <#elseif dayOfWeek == "Tuesday">
-               <h2> Tuesday</h2>
+               <p> Tuesday</p>
             <#else>
-                <h2> else </h2>
+                <p> else </p>
             </#if>
         </div>  
         
