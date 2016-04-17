@@ -34,6 +34,7 @@ public class Main {
     port(Integer.valueOf(System.getenv("PORT")));
     staticFileLocation("/public");
     Object register = new register();
+    Object s = new ServerRoute();
  
 
     // get("/hello", (req, res) -> {
@@ -80,13 +81,7 @@ public class Main {
        return new ModelAndView(attributes, "like.ftl");
     }, new FreeMarkerEngine());*/
         
-    //get JSON through API
-    get("api/userDetail",(req, res) -> {
-        Map<String, Object> data = new HashMap<>();
-        data.put("username","Emma");
-        data.put("introduction", "Hello everyone, what's up?");
-        return data;
-    },m.gson::toJson);
+   
     
     
     
