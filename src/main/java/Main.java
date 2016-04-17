@@ -26,10 +26,9 @@ import com.heroku.sdk.jdbc.DatabaseUrl;
 
 public class Main {
 
-    Gson gson = new Gson();
-    public static void Main(String args[]){
+    
+    public static void Main(String[] args){
         
-        Main m = new Main();
 
     port(Integer.valueOf(System.getenv("PORT")));
     staticFileLocation("/public");
