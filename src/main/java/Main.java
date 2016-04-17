@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.text.SimpleDateFormat;
 
+
+
 import java.net.URI;
 import java.net.URISyntaxException;
 import com.google.gson.Gson;
@@ -18,12 +20,17 @@ import static spark.Spark.*;
 import spark.template.freemarker.FreeMarkerEngine;
 import spark.ModelAndView;
 import static spark.Spark.get;
+import com.google.gson.Gson;
 
 import com.heroku.sdk.jdbc.DatabaseUrl;
 
 public class Main {
 
-  public static void main(String[] args) {
+    Gson gson = new Gson();
+    public Main(){
+        setupRoutes();
+    }
+  private void setupRoutes() {
 
     port(Integer.valueOf(System.getenv("PORT")));
     staticFileLocation("/public");
@@ -74,7 +81,13 @@ public class Main {
        return new ModelAndView(attributes, "like.ftl");
     }, new FreeMarkerEngine());*/
         
-   
+    //get JSON through API
+    get("api/userDetail",(req, res) -> {
+        Map<String, Object> data = new HashMap<>();
+        data.put("username","Emma");
+        data.put("introduction", "Hello everyone, what's up?");
+        return data;
+    },gson::toJson);
     
     
     
