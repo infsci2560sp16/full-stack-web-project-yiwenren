@@ -27,10 +27,9 @@ import com.heroku.sdk.jdbc.DatabaseUrl;
 public class Main {
 
     Gson gson = new Gson();
-    public Main(){
-        setupRoutes();
-    }
-  private void setupRoutes() {
+    public static void Main(){
+        
+        Main m = new Main();
 
     port(Integer.valueOf(System.getenv("PORT")));
     staticFileLocation("/public");
@@ -87,7 +86,7 @@ public class Main {
         data.put("username","Emma");
         data.put("introduction", "Hello everyone, what's up?");
         return data;
-    },gson::toJson);
+    },m.gson::toJson);
     
     
     
