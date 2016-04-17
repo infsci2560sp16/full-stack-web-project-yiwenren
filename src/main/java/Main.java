@@ -27,7 +27,7 @@ import com.heroku.sdk.jdbc.DatabaseUrl;
 public class Main {
 
     Gson gson = new Gson();
-    public static void Main(){
+    public static void Main(String args[]){
         
         Main m = new Main();
 
