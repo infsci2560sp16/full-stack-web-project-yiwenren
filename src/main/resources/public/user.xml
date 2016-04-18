@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<Product xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="Item.xsd">
+<user>
+    <Name>emma</Name>
+    <Gender>true</Gender>
+    <Email>emma@google.com</Email>
+    <Images>images/1.jpg</Images>
+    <Location>Pittsburgh</Location>
+    <Birthday>1995-04-02</Birthday>
+    <Introduction>hello world!</Introduction>
+    <Level>8</Level>
+    <Telephone>4112113289</Telephone>
+    <Facebook>emma</Facebook>
+  </user>
+  <user>
+    <Name>Allen</Name>
+    <Gender>false</Gender>
+    <Email>Allen@google.com</Email>
+    <Images>images/2.jpg</Images>
+    <Location>Washington</Location>
+    <Birthday>1991-01-02</Birthday>
+    <Introduction>hello</Introduction>
+    <Level>12</Level>
+    <Telephone>4112113290</Telephone>
+    <Facebook>Allen</Facebook>
+  </user>
+  <user>
+    <Name>Jack</Name>
+    <Gender>false</Gender>
+    <Email>Jack@google.com</Email>
+    <Images>images/3.jpg</Images>
+    <Location>LA</Location>
+    <Birthday>1990-12-18</Birthday>
+    <Introduction>hello, you</Introduction>
+    <Level>19</Level>
+    <Telephone>4112113286</Telephone>
+    <Facebook>Jack</Facebook>
+  </user>
+</Product>

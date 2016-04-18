@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:simpleType name="teleType">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[0-9]{10}"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="user">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string"/>
+      <xs:element name="Gender" type="xs:boolean"/>
+      <xs:element name="Email", type="emailAddress"/>
+        <xsd:simpleType name="emailAddress"> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:pattern value="[^@]+@[^\.]+\..+"/> 
+          </xsd:restriction> 
+        </xsd:simpleType>  
+       </xs:element>
+      <xs:element name="Images" type="xs:string"/>
+      <xs:element name="Location" type="xs:string"/>
+      <xs:simpleType>
+             <xs:restriction base="xs:string">
+             <xs:maxLength value = "100"/>
+             </xs:restriction>
+           </xs:simpleType>
+       </xs:element>
+      <xs:element name="Birthday" type="xs:date"/>
+      <xs:element name="Introduction", type="xs:string"/>
+      <xs:simpleType>
+             <xs:restriction base="xs:string">
+             <xs:maxLength value = "140"/>
+             </xs:restriction>
+           </xs:simpleType>
+      <xs:element name="Level" type="xs:postiveInteger"/>
+      <xs:element name="Telephone" type="xs:teleType"/>
+      <xs:element name="FaceBook Name" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>
