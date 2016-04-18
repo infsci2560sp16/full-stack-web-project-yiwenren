@@ -32,7 +32,7 @@ public class Main {
     port(Integer.valueOf(System.getenv("PORT")));
     staticFileLocation("/public");
     Object register = new register();
-    //Object s = new ServerRoute();
+    Object s = new ServerRoute();
  
 
     // get("/hello", (req, res) -> {

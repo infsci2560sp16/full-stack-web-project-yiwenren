@@ -39,7 +39,7 @@ import java.nio.file.Paths;
 public class ServerRoute {
     Gson gson = new Gson();
 
-  /*public ServerRoute() {
+  public ServerRoute() {
     setupRoutes();
   }
 
@@ -51,6 +51,6 @@ public class ServerRoute {
         data.put("introduction", "Hello everyone, what's up?");
         return data;
     },gson::toJson);
-   }*/
+   }
     
 }
