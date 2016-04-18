@@ -45,7 +45,7 @@ public class ServerRoute {
 
    private void setupRoutes() {
         //get JSON through API
-    get("api/userDetail",(req, res) -> {
+    get("/api/userDetail",(req, res) -> {
         Map<String, Object> data = new HashMap<>();
         data.put("username","Emma");
         data.put("introduction", "Hello everyone, what's up?");
