@@ -17,6 +17,9 @@
         <menu>Following.html</menu>
         <content>Following</content>
     </post>
-    
+     <post>
+        <menu>Setting.html</menu>
+        <content>Setting</content>
+    </post> 
 </Product>
 
