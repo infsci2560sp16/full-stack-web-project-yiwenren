@@ -17,8 +17,8 @@ and open the template in the editor.
                     url:"/api/userDetail",
                     success: function (result){
                         var data = JSON.parse(result);
-                        $("#setName p").html(data.username);
-                        $(".setIntroduction p").html(data.introduction);
+                        $("#setName").html(data.username);
+                        $(".setIntroduction").html(data.introduction);
                     }
                 });
             });
@@ -53,9 +53,8 @@ and open the template in the editor.
         
         <table id="setting">
             <tr><td>Name</td></tr>
-            <tr><td id="setName"><p></p></td></tr>
+            <tr><td id="setName"></td></tr>
             <tr><td>Introduction</td></tr>
-            <tr><td id="setIntroduction"><p></p></td></tr>
             <tr><td id="setIntr"><textarea class="setIntroduction" rows="10" cols="50" title="please enter your introduction" placeholder="please enter your introduction here~" style="font-size: 18px"></textarea></td></tr>
             <tr>
                 <td><input id="setCancel" type="button" value="cancel" onclick="javascript:window.location.href='http://localhost:8383/project1/index.html'">
