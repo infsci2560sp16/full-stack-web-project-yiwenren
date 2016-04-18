@@ -26,7 +26,7 @@ and open the template in the editor.
          <ul>  
                 <li><a href="index.ftl">Home</a></li>
                 <li><a href="Post.html">Post</a></li>
-                <li><a href="like.html">Like</a></li>
+                <li><a href="like.ftl">Like</a></li>
                 <li class="extra"><a href="Following.html" style="width: 150px">Following</a></li>
                 <li class="extra"><a href="Setting.html" >SETTING</a></li>
          </ul> 
